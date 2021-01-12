@@ -140,7 +140,8 @@ Rtsne.default <- function(X, dims=2, initial_dims=50,
         momentum=momentum, final_momentum=final_momentum, eta=eta, exaggeration_factor=exaggeration_factor)
  
   # Check for missing values
-  X <- na.fail(X)
+  #X <- na.fail(X)
+  print("no check")
   
   # Apply PCA
   if (!is_distance) { 
